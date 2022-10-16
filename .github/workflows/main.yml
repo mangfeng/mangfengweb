@@ -31,10 +31,10 @@ jobs:
     - name: build project
       run: npm run build
     
-    - name: scp-deployer
-      # You may pin to the exact commit or the version.
-      # uses: siva1024/scp-deployer@595af961c23bfad4cc7c1bcdfe9b57fb840e7cb9
-      uses: siva1024/scp-deployer@v1.0
+    - name: SCP Files
+    # You may pin to the exact commit or the version.
+    # uses: appleboy/scp-action@b476d5806f2a4c1ed5902a87fa91b0623cac7258
+      uses: appleboy/scp-action@v0.0.1
       with:
         # ssh remote host
         host: ${{ secrets.REMOTE_HOST }}
