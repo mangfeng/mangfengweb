@@ -31,7 +31,7 @@ jobs:
     - name: build project
       run: npm run build
       
-    - name: copy file via ssh password
+    - name: copy file via ssh password to server
       uses: appleboy/scp-action@master
       with:
         host: ${{ secrets.REMOTE_HOST }}
