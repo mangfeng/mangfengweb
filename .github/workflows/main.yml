@@ -13,7 +13,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    environment: main
     strategy:
       matrix:
         node-version: [16.x]
@@ -30,24 +30,15 @@ jobs:
       run: npm install
     - name: build project
       run: npm run build
-    
-    - name: scp-deployer
-      # You may pin to the exact commit or the version.
-      # uses: siva1024/scp-deployer@595af961c23bfad4cc7c1bcdfe9b57fb840e7cb9
-      uses: siva1024/scp-deployer@v1.0
+      
+    - name: copy file via ssh password to server
+      uses: appleboy/scp-action@master
       with:
-        # ssh remote host
         host: ${{ secrets.REMOTE_HOST }}
-        # ssh remote user
         username: ${{ secrets.REMOTE_USER }}
-        # ssh remote port
-        port: 22
-        # content of ssh private key. ex raw content of ~/.ssh/id_rsa
-        # key: # optional
-        # ssh remote password
         password: ${{ secrets.REMOTE_PASSWORD }}
-        # source to copy from
+        port: 22
         source: "build/"
-        # destination to download on server
         target: ${{ secrets.REMOTE_TARGET }}
+
 
