@@ -31,13 +31,14 @@ jobs:
     - name: build project
       run: npm run build
       
-    - name: local remote scp
-      uses: cross-the-world/scp-pipeline@master
+    - name: copy file via ssh password
+      uses: appleboy/scp-action@master
       with:
         host: ${{ secrets.REMOTE_HOST }}
-        user: ${{ secrets.REMOTE_USER }}
-        pass: ${{ secrets.REMOTE_PASSWORD }}
-        local: "build/"
-        remote: ${{ secrets.REMOTE_TARGET }}
+        username: ${{ secrets.REMOTE_USER }}
+        password: ${{ secrets.REMOTE_PASSWORD }}
+        port: 22
+        source: "build/"
+        target: ${{ secrets.REMOTE_TARGET }}
 
 
