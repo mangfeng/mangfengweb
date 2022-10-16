@@ -30,24 +30,14 @@ jobs:
       run: npm install
     - name: build project
       run: npm run build
-    
-    - name: SCP Files
-    # You may pin to the exact commit or the version.
-    # uses: appleboy/scp-action@b476d5806f2a4c1ed5902a87fa91b0623cac7258
-      uses: appleboy/scp-action@v0.0.1
+      
+    - name: local remote scp
+      uses: cross-the-world/scp-pipeline@master
       with:
-        # ssh remote host
         host: ${{ secrets.REMOTE_HOST }}
-        # ssh remote user
-        username: ${{ secrets.REMOTE_USER }}
-        # ssh remote port
-        port: 22
-        # content of ssh private key. ex raw content of ~/.ssh/id_rsa
-        # key: # optional
-        # ssh remote password
-        password: ${{ secrets.REMOTE_PASSWORD }}
-        # source to copy from
-        source: "build/"
-        # destination to download on server
-        target: ${{ secrets.REMOTE_TARGET }}
+        user: ${{ secrets.REMOTE_USER }}
+        pass: ${{ secrets.REMOTE_PASSWORD }}
+        local: "build/"
+        remote: ${{ secrets.REMOTE_TARGET }}
+
 
