@@ -1,0 +1,78 @@
+/* 网页底部CSS样式 */
+.footerContainer{
+    border-top:1px solid #f4f4f4;
+    padding-top:60px;
+    padding-bottom: 100px;
+}
+.footerContent{
+    width:1200px;
+    margin: auto;
+    padding:0px;
+}
+
+.footerFeature{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerLink ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.footerLink ul li h3{
+    font-size:12px;
+    margin-bottom: 20px;
+    color:#646464;
+}
+
+.footerLink ul li>ul{
+    display: flex;
+    flex-direction:column;
+    margin-right: 80px;
+}
+
+.footerLink ul li>ul li{
+    color:#bdbdbd;
+    font-size: 12px;
+    margin-bottom: 8px; 
+    cursor: pointer;  
+    transition: all 0.3s;
+}
+
+.footerLink ul li>ul li a{
+    color:#bdbdbd;
+    transition: all 0.3s;
+}
+
+.footerLink ul li>ul li a:hover,.footerLink ul li>ul li:hover{
+    color:#999;
+}
+
+.footerContact h4{
+    color:#bdbdbd;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.footerInfo{
+    margin-top:40px;
+    padding-top:20px;
+    border-top:1px solid #f4f4f4;
+}
+.footerInfo h5{
+    font-weight: normal;
+    letter-spacing: 1px;
+    color:#bdbdbd;
+    font-size:12px;
+}
+
+.footerInfo h5 a{
+    color: #bdbdbd ;
+}
+
+.footerInfo h5 a:hover{
+    color: #666666;
+}

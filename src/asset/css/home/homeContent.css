@@ -1,0 +1,189 @@
+/* 首页中部展示样式 */
+.homeContent{
+    width:1200px;
+    margin:auto;
+    padding:0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top:200px;
+    overflow: hidden;
+}
+
+.homeContent h1,.homeContent h3{
+    display: block;
+    text-align: center;
+}
+
+.homeContent h1{
+    font-size:46px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color:#0d0d0d;
+}
+
+.homeContent h3{
+    font-size:20px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    color:#9f9f9f;
+    margin-top:15px;
+}
+
+/* APP截图展示 */
+.contentPic{
+    padding:40px;
+    width:509px;
+    margin:auto;
+    box-shadow: 0px 30px 200px #dcdcdc;
+    margin-top: 100px;
+}
+
+.appFirstTitle{
+    font-size:40px;
+    font-weight: bolder;
+    margin-top:30px;
+}
+
+.appFirstIntro{
+    font-size:14px;
+    color:#d4d4d4;
+    margin-top: 2px;
+}
+
+.appSearch{
+    height: 65px;
+    box-shadow: 0px 7px 40px #eaeaea;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:50px;
+    margin-bottom: 45px;
+}
+
+.appSearch span:nth-child(1){
+    margin-left:30px;
+    color:#d4d4d4;
+}
+
+.appSearch span:nth-child(2){
+    height:18px;
+    width:18px;
+    background: url('../../images/search.png');
+    background-size: contain;
+    margin-right:30px;
+    opacity: 0.12;
+}
+
+.appHeaderTitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.appHeaderTitle span:nth-child(1){
+    font-size:26px;
+    font-weight: bolder;
+}
+.appHeaderTitle span:nth-child(2){
+    color:#bababa;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.appBookList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.appBookCover{
+    width:125px;
+    height:180px;
+    margin:auto;
+    margin-bottom: 27px;
+    margin-top:20px;
+    border-radius: 4px;
+    background-image: linear-gradient( 90deg, rgb(243,238,216) 0%, rgb(255,252,240) 7%, rgb(254,250,233) 13%, rgb(250,246,228) 100%);
+    box-shadow: 0px 10px 16px 4px #ececec;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items:flex-end;
+    position: relative;
+}
+
+.appBookCover span:nth-child(2){
+    font-size:12px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    margin-right:15px;
+    opacity: 0.3;
+    display: block;
+}
+  
+.appBookCover span:nth-child(1){
+    border-radius: 50%;
+    background-color: rgb(25, 166, 243);
+    position: absolute;
+    height:15px;
+    width:15px;
+    right:15px;
+    top:20px;
+}
+
+.appBookItemTitle{
+    text-align: center;
+    color:#868686;
+}
+
+.appDynstry{
+    margin-top:20px;
+    padding-bottom: 20px;
+}
+
+.appDynstry ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.appDynstry ul li{
+    height:90px;
+    width:90px;
+    background: #baa377;
+    line-height: 90px;
+    text-align: center;
+    font-weight: bolder;
+    color:#e6ded2;
+    font-size:20px;
+    border-radius: 50%;
+}
+
+
+
+/* 下载 */
+.downloadApp{
+    width:140px;
+    height:45px;
+    line-height: 45px;
+    text-align: center;
+    background: #19a6f3;
+    color:#fff;
+    margin:30px auto 30px auto;
+    padding: 0px;
+    border-radius: 40px;
+    font-size: 16px;
+    transition: All 1s;
+    cursor: pointer;
+    font-weight: bold;
+}
+.downloadApp:hover{
+    background: #01c8ff;
+    box-shadow: 0px 15px 30px #ececec;
+}

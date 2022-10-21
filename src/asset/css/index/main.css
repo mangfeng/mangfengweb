@@ -1,0 +1,25 @@
+/* 全局样式 */
+*{
+  margin:0px;
+  padding:0px;
+  list-style: none;
+}
+
+a{
+  color:#333;
+  text-decoration: none;
+}
+
+body {
+  font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Hiragino Sans GB,Microsoft Yahei,Microsoft Jhenghei,sans-serif,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size:14px;
+}
+
+.container{
+  width:1200px;
+  margin:auto;
+  padding:0px;
+}

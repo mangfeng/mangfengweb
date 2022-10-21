@@ -1,0 +1,125 @@
+/* 阅读页面 */
+/* 关于页面 */
+.readContainer{
+}
+
+.readHeader{
+    background: #f7f7f7;
+    padding:110px 0 80px 0;
+}
+
+.readHeader h1{
+    font-weight: 300;
+    font-size:35px;
+    letter-spacing: 3px;
+}
+.readHeader h5{
+    font-size:14px;
+    margin-top:10px;
+    font-weight: normal;
+    color:#999;
+}
+
+
+.readContent,.readList{
+    width:1200px;
+    margin: auto;
+    padding:0px;
+}
+
+
+/* 文章列表 */
+
+.readList ul{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    top: -50px;
+    position: relative;
+}
+
+.readList ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea; */
+    border-top: 1px solid #eaeaea;
+    padding: 20px 0px 15px 0px;
+    transition: all 0.5s;
+    align-items: center;
+}
+
+.readList ul li:hover{
+    background: #f4f4f4;
+}
+
+.readList ul li:last-child{
+    border-bottom:1px solid #eaeaea;
+}
+
+.readList ul li div{
+    /* margin-left:20px; */
+    width: 60%;
+}
+
+.readList ul li div a{
+    transition: all 0.3s;
+}
+
+.readList ul li div a:hover{
+    color:#19a6f3;
+}
+
+.readList ul li div p:nth-child(1){
+    font-size:16px;
+    color:#111;
+}
+
+.readList ul li div p:nth-child(2){
+    margin-top: 5px;
+    color:#999;
+    font-size:14px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.readList ul li i{
+    /* margin-right:20px; */
+    font-style: normal;
+    color:#bbb;
+    font-size:12px;
+}
+
+/* 关注更多 */
+.getMore{
+    width:200px;
+    height:35px;
+    text-align: center;
+    line-height: 35px;
+    border:1px solid #ccc;
+    color:#999;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 12px;
+    margin: auto;
+    /* margin-bottom: 40px; */
+    position: relative;
+    top: -50px;
+}
+
+.getMore:hover{
+    border:1px solid #19a6f3;
+    color:#19a6f3;
+}
+
+/* banner */
+.banner{
+    height:432px;
+    margin:auto;
+    width:1200px;
+    background: url("../../images/banner.png");
+    border-radius: 3px;
+    position: relative;
+    top: -50px;
+}

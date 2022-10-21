@@ -1,0 +1,52 @@
+/* 头部 */
+.header{
+    width:1200px;
+    margin: auto;
+    padding:0px;
+    height:auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:30px;
+}
+
+/* 标志 */
+.logo{
+    background: url("../../images/logo.jpg");
+    height:35px;
+    width:35px;
+    border-radius: 50%;
+    background-size: contain;
+}
+
+/* 菜单 */
+.meun ul li{
+    float: left;
+    font-size:15px;
+    padding:5px 15px;
+}
+
+.meun ul li a{
+    color:#c5c5c5;
+    transition: all 0.5s;
+}
+
+.meun ul li a:hover{
+    color:#939393;
+}
+
+.meun ul li:last-child{
+    background: #19a6f3;
+    color:#fff;
+    border-radius: 20px;
+    padding:5px 20px;
+    margin-left:10px;
+}
+
+.meun ul li:last-child a{
+    color:#fff;
+}
+
+
